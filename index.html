@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla de instragram</title>
+ 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   
+</head>
+
+<body>
+   
+   
+    <nav class="navbar navbar-light bg-light py-3">
+        <div class="container-fluid">
+            <div class="d-flex w-100 justify-content-between">
+                <div>
+                    <i class="bi bi-gear-fill"></i>
+                    <h5 class="d-inline-block fs-5">Instagram</h5>
+                </div>
+                <div class="d-flex align-right justify-content-end">
+
+                   
+                    <button type="button" class="btn btn-success me-2" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Crear nuevo post
+                    </button>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-gear-fill"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Perfil</a></li>
+                            <li><a class="dropdown-item" href="#">Accesibilidad</a></li>
+                            <li><a class="dropdown-item" href="#">Privacidad</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="#">Cerrar sesion</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+   
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Crear nuevo post</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Comentario:</h6>
+                    <textarea class="form-control" placeholder="Pon aquí tu comentario"
+                        id="floatingTextarea2"></textarea>
+                    <div class="row p-2">
+                        <button class="col-1 border rounded p-1 m-1 btn-light">
+                            <i class="fa-solid fa-camera"></i>
+                        </button>
+                        <button class="col-1 border rounded p-1 m-1 btn-light">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-success">Publicar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="container-fluid p-2">
+
+      <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="bi bi-grid-3x3"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="bi bi-square-fill"></i></button>
+        </li>
+        
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+          <div class="row">
+            <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://images.ctfassets.net/denf86kkcx7r/4IPlg4Qazd4sFRuCUHIJ1T/f6c71da7eec727babcd554d843a528b8/gatocomuneuropeo-97?fm=webp&w=913" class="img-fluid w-100" alt=""></div>
+            <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://hospitalveterinariodonostia.com/wp-content/uploads/2022/02/Personalidad-gatos-674x337.png" class="img-fluid w-100" alt=""></div>
+            <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://img.freepik.com/vector-premium/imagen-gatito_1138544-168755.jpg?w=1060" class="img-fluid w-100" alt=""></div>
+        </div>
+        <div class="row">
+            <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://img.freepik.com/vector-premium/imagen-gatito_1138544-193682.jpg?w=1060" class="img-fluid w-100" alt=""></div>
+            <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://static.nationalgeographic.es/files/styles/image_3200/public/75552.ngsversion.1422285553360.webp?w=1600&h=1067" class="img-fluid w-100" alt=""></div>
+            <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://static.nationalgeographic.es/files/styles/image_3200/public/40411.ngsversion.1467941362865.webp?w=1600&h=1067&q=100" class="img-fluid w-100" alt=""></div>
+        </div>
+        <div class="row">
+            <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://estaticos-cdn.prensaiberica.es/clip/72ce8472-3b75-4764-a981-63dc5a2d991c_16-9-discover-aspect-ratio_default_0.webp" class="img-fluid w-100" alt=""></div>
+            <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://www.purina.es/sites/default/files/styles/ttt_image_690/public/2023-06/Cat%20sleeping%20patterns.webp?itok=Zlze5ah4" class="img-fluid w-100" alt=""></div>
+            <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://cdn0.uncomo.com/es/posts/1/7/5/como_saber_si_mi_gato_esta_en_celo_18571_orig.jpg" class="img-fluid w-100" alt=""></div>
+        </div>
+          
+        </div>
+
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+          
+          <div class="row my-4">
+            <div class="col-6 mx-auto border rounded p-0">
+                <div class="d-flex p-2">
+                    <div class="w-100 fs-4">Mica</div>
+                    <small class="align-bottom">06/05/2024</small>
+                </div>
+                <img style="object-fit: cover;" src="https://images.ctfassets.net/denf86kkcx7r/4IPlg4Qazd4sFRuCUHIJ1T/f6c71da7eec727babcd554d843a528b8/gatocomuneuropeo-97?fm=webp&w=913" class="img-fluid w-100 col-12" alt=""/>
+                <div class="p-2">
+                    <strong>9999 Likes</strong>
+                    <p>Os presento a Mica, una preciosa gata rescatada de la calle.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="col-6 mx-auto border rounded p-0">
+                <div class="d-flex p-2">
+                    <div class="w-100 fs-4">Kira durmiendo.</div>
+                    <small>06/05/2024</small>
+                </div>
+                <img style="object-fit: cover;" src="https://www.purina.es/sites/default/files/styles/ttt_image_690/public/2023-06/Cat%20sleeping%20patterns.webp?itok=Zlze5ah4" class="img-fluid w-100 col-12" alt=""/>
+                <div class="p-2">
+                    <strong>99999999 Likes</strong>
+                    <p>No hay nada tan relajante y adorable como ver a un gatito durmiendo.</p>
+                </div>
+            </div>
+        </div>
+        
+
+        </div>
+       
+      </div>
+            
+       
+    </div>
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        
+</body>
+
+</html>
